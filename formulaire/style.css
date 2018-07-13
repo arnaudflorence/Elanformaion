@@ -1,0 +1,116 @@
+
+*{
+    box-sizing: border-box;
+}
+#fond{
+    background-image:url(riopaysage.jpg);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    background-size: cover;
+
+
+    /* Safari */
+    -webkit-filter: blur(5px);
+    /* Firefox */
+    -moz-filter: blur(5px);
+    /* Opera */
+    -o-filter: blur(5px);
+    /* Internet Explorer */
+    -ms-filter: blur(5px);
+    /* Filtre de floutage CSS3 standard */
+    filter: blur(5px);
+    z-index: -9999;
+
+
+}
+#wrapper{
+    max-width: 1024px;
+    margin:  auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a as";
+    margin-top: 5%; 
+    height: 500px; 
+    font-family: 'Pacifico', cursive;
+    font-size: 19px;
+    box-shadow: 15px 125px 50px black;
+}
+article{
+    color:white;
+    grid-area: a;
+    display: flex;
+    background-image: linear-gradient(to right top, #d169ff, #b06fff, #8b74ff, #5f78ff, #007aff);
+    border-radius: 25px 0px 0px 25px;
+}
+
+aside{
+    grid-area: as;
+    padding: 3em;
+    background-color: white;
+    display: flex;   
+    border-radius: 0px 25px 25px 0px;
+}
+h1
+{
+    text-align: center;
+    margin: auto;
+}
+
+form{
+    margin: auto; 
+}
+#Valider{
+    color: white;
+    padding: 1em;
+    padding-left: 3em;
+    padding-right:  3em;
+    border-radius: 50px ;
+    background-image: linear-gradient(to right top, #d169ff, #b06fff, #8b74ff, #5f78ff, #007aff);
+}
+#Annuler{
+    color: white;
+    padding: 1em;
+    padding-left: 3em;
+    padding-right:  3em;
+    border-radius: 50px ;
+    background-image: linear-gradient(to right top, #d169ff, #b06fff, #8b74ff, #5f78ff, #007aff);
+}
+#connection{
+    color: white;
+    padding: 1em;
+    padding-left: 3em;
+    padding-right:  3em;
+    border-radius: 50px ;
+    background-color : rgba( 0, 0, 0, 0);
+    border-color: white;
+}
+
+form input{
+
+    width: 100%;
+    padding: 1em;
+    border-radius: 50px ;
+    margin: 0.5em;
+
+}
+@media screen and (max-width: 750px){
+
+    #wrapper{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (2, auto);
+        grid-template-areas:    "a"  
+            "as";                                        ;							 
+    }
+    article{
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    aside{ 
+        border-radius: 0px 0px 0px 0px;
+    }
+
+}

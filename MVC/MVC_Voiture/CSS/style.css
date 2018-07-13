@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+td {
+    padding : 1em;
+}
+tr:nth-child(2n+0){
+    background-color: gray;
+}
+th{
+    background-color: blueviolet;
+    padding : 2em;
+    text-align: center;
+}
+tr{
+    text-align: center;
+}
+tr:hover{
+    background-color: gray;
+    opacity: 0.7;
+
+}

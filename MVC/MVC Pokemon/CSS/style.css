@@ -1,0 +1,126 @@
+
+*{
+    box-sizing: border-box;
+}
+#fond{
+    background-image:url(fond.jpg);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    background-size: cover;
+
+
+    /* Safari */
+    -webkit-filter: blur(5px);
+    /* Firefox */
+    -moz-filter: blur(5px);
+    /* Opera */
+    -o-filter: blur(5px);
+    /* Internet Explorer */
+    -ms-filter: blur(5px);
+    /* Filtre de floutage CSS3 standard */
+    filter: blur(5px);
+    z-index: -9999;
+}
+#jeu{
+    max-width: 1024px;
+    height:  630px;
+    display: block;
+    background-image:url(arene.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    padding-top: 0.5em;  
+    grid-area: j;
+}
+#wrapper{
+    max-width: 1024px;
+    margin:  auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "j j"
+                         "a i";
+    margin-top: 5%; 
+    height: auto; 
+    font-family: 'Pacifico', cursive;
+    font-size: 19px;
+    box-shadow: 8px 8px 30px black;
+}
+#instruction{
+    grid-area: i;
+    background-color: white;
+     border-color: black;
+     border-width: 0.2em;
+     border-style: solid;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    height: 12em;
+}
+#affichage{
+     font-family: 'Press Start 2P', cursive;
+     font-family: 'PT Mono', monospace;
+     grid-area: a;
+     background-color: white;
+     border-color: black;
+     border-width: 0.2em;
+     border-style: solid;
+     text-align: center;
+     padding-top: 3em;
+     height: 12em;
+     
+}
+.btn{
+   width: 9em;
+   text-align: center ;
+   margin: 0.4em;
+   text-decoration: none;
+   color: black;
+   border-style: solid;
+   border-radius: 20px ;
+   font-size: 25px;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Press Start 2P', cursive;
+   padding-top: 1em;
+}
+#pokemon{
+        text-align: justify ;
+        overflow: hidden;
+
+}
+#pokemonImg{
+        width: 500px;
+        margin-left:-60px;
+        margin-bottom: -160px;
+}
+#adversaire{
+        text-align:  end;
+}
+#adversaireImg{
+        width: 250px;
+}
+#barre1{
+    position: absolute ;
+}
+#barre2{
+
+     margin-left:50px;
+     margin-bottom: 0.5em;
+     height: 1.5em;
+     width: 20em;
+ 
+}
+#infoBarreAdv p{
+   margin-right: 70px;  
+   font-size: 10px;
+   font-family: 'Press Start 2P', cursive;
+}
+#infoBarreJ p{
+   margin-left:50px; 
+   font-size: 20px;
+   font-family: 'Press Start 2P', cursive;
+}

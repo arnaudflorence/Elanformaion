@@ -1,0 +1,283 @@
+*{
+	box-sizing: border-box;
+}
+body{
+    padding: 0;
+	margin: 0;
+	font-family: Arial;
+	font-size: 14px; 
+}
+
+#wrapper{
+	max-width: 1024px;
+	margin:  auto;
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	grid-template-rows: 1fr 2fr;
+	grid-template-areas: "h h"
+                             "c c"
+                             "o o"
+                             "b b"
+                             "f f";
+}
+#conteneur{
+		display: flex;
+		grid-area: c;
+		background-image: url(riopaysage.jpg);	
+		justify-content: space-between;
+		align-items :flex-end;
+		background-repeat:no-repeat;
+		background-position: center;
+                
+		
+}
+.element{
+	margin-bottom : 10px;
+	padding: 10px;
+	background-color : rgba( 0, 0, 0, 0.3);
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+            
+}
+
+.element a:nth-child(2){
+	padding : 10px ;
+	background-color : rgba( 134, 224, 195, 0.8 );
+	border-radius: 8px;
+	font-size: 1.1em;
+	font-weight: bold;
+        -moz-transition: width 2s; /* firefox */
+	-webkit-transition: width 2s; /* Safari, chrome */
+        transition: width 2s, background-color 2s;
+	width: 95px;
+        text-decoration: none;
+        color: black; 
+}
+.element a:nth-child(2):hover{
+	width: 115px;
+	background-color : rgba( 134, 224, 253, 1 );
+
+}
+.element a:nth-child(1){
+	padding : 10px ;
+	text-shadow: 0 0 0 transparent;
+	border-radius: 8px;
+	font-size: 1.1em;
+	font-weight: bold;
+        text-decoration: none;
+        color: black; 
+        text-shadow: 0 0 0.8em #8F7;
+}
+
+.drapeau{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 200px;
+}
+
+
+
+header{
+	grid-area: h;
+}
+#logo{
+    text-align: center;
+}
+article{
+	grid-area: a;
+	margin:  1em;
+}
+aside{
+	grid-area: as;
+	padding: 0.5em;
+        background-color : rgba( 134, 224, 195, 0.8 );
+}
+footer{
+	grid-area: f;
+        padding-top: 1em;
+}
+h1{
+	font-size: 2em;
+}
+h2{
+	text-align:center;
+}
+
+p{
+	text-align : justify;
+}
+a{
+	text-decoration:none;
+}
+.photos{
+	width:100px;
+	height : 100px;
+}
+.marque{
+	width:100px;
+	height : 100px;
+}
+.img{
+	display: flex;
+        margin-left: auto;
+        margin-right: auto;
+	width: 150px;
+        height : 150px;
+}
+.social{
+	display: flex;
+        grid-area: s;
+	justify-content: space-around;
+}
+aside .social i:hover{
+    animation: a 1s infinite linear;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Roboto Slab', serif;
+	font-size: 24px; 	
+}
+.mobile{
+    display: none;
+}
+hr{
+	height : 0.5em;
+	background-color: black;
+}
+nav ul, footer{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	justify-content: space-around;
+        text-align: center;
+       
+	
+	
+}
+#corp{
+    display:flex;
+    grid-area: o;
+  
+}
+
+#bouton{
+    display:none;
+    cursor: pointer;
+}
+#bouton1{
+    text-align: center;
+    grid-area: b;
+    display:block;
+    cursor: pointer;
+}
+
+nav ul li{
+     display: flex;
+        text-align: center;
+        padding: 10px;
+         align-items :flex-end;
+        
+}
+
+@media screen and (max-width: 650px){
+	nav{
+            margin-top: 1em;
+            display:block;}
+        nav ul{
+            margin-top: 0.5em;}
+      
+        .mobile{
+            display: block;
+        }
+	#wrapper{
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat (4, auto);
+		grid-template-areas:    "h"  
+                                        "o"
+                                        "b"
+                                        "f";							 
+	}
+        #corp{
+           display:inline;
+        }
+   
+	nav ul, footer{
+		flex-direction: column;
+	}
+        aside .drapeau{
+            display : none;
+        }
+        aside p{
+            display : none;
+        }
+        #conteneur {
+            display : none;
+        }
+
+        p{
+            text-align: center;
+        }
+        #wrapper{
+            grid-template-rows: none;
+        }
+        nav ul li{
+
+            align-self: center;
+            background-color:  rgba( 216, 216, 216, 0.8 );
+            margin-top : 0.3em;
+        }
+        nav ul li:hover{
+
+            align-self: center;
+            background-color:  rgba( 0, 0, 0, 1 );
+            margin-top : 0.3em;
+            color : white;
+            cursor: pointer;
+        }
+        .photos{
+            width:50%;
+            height : 50%;
+        }
+        #bouton{
+            display:block;
+            padding: 1em;
+            /*background-color : rgba( 134, 224, 195, 0.8 );*/
+            position: absolute;
+        }
+        #bouton1{
+            text-align: center;
+            grid-area: b;
+            display:block;
+            cursor: pointer;
+            background-color: rgba( 134, 224, 195, 0.8 );
+        }
+
+        nav ul li{
+            display: none;
+        }
+        article p{
+	text-align : justify;}
+    
+ }
+.overlay{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	padding: 3em;
+}
+.overlay img{
+	width: 100%;
+	height: 100%;
+}
+
+

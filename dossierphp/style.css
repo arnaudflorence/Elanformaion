@@ -1,0 +1,31 @@
+
+
+h2
+{
+    text-align: center;
+    margin: auto;
+}
+.formulaire{
+    margin: auto; 
+}
+#Valider{
+    color: white;
+    padding: 1em;
+    padding-left: 3em;
+    padding-right:  3em;
+    border-radius: 50px ;
+    background-image: linear-gradient(to right top, #d169ff, #b06fff, #8b74ff, #5f78ff, #007aff);
+}
+#wrapper{
+    max-width: 600px;
+    margin:  auto;
+    display: grid;
+    background-color: wheat;
+    margin-top: 5%; 
+    padding-bottom: 5%;
+    font-family: 'Pacifico', cursive;
+    font-size: 19px;
+    box-shadow: 15px 25px 50px black;
+
+
+}

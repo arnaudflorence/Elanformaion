@@ -1,0 +1,126 @@
+/* ---------------------------Fiche personnelle --------------------------------*/
+.panel.panel-card {
+    position: relative;
+    /*hauteur du cadre*/
+    height: 500px;
+    border: none;
+    overflow: hidden;
+    background: rgba(214, 224, 226, 0.2);
+}
+.panel.panel-card .panel-heading {
+    position: relative;
+    z-index: 2;
+    height: 200px;
+    border-bottom-color: #fff;
+    overflow: hidden;
+
+    -webkit-transition: height 600ms ease-in-out;
+    transition: height 600ms ease-in-out;
+}
+.panel.panel-card .panel-heading img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    width: 120%;
+
+    -webkit-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+}
+
+.panel.panel-card .panel-figure {
+    position: absolute;
+    top: auto;
+    left: 50%;
+    z-index: 3;
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 1;
+    -webkit-box-shadow: 0 0 0 3px #fff;
+    box-shadow: 0 0 0 3px #fff;
+    overflow: hidden;
+
+    -webkit-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+
+    -webkit-transition: opacity 400ms ease-in-out;
+    transition: opacity 400ms ease-in-out;
+}
+
+.panel.panel-card .panel-body {
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    -webkit-transition: padding 400ms ease-in-out;
+    transition: padding 400ms ease-in-out;
+}
+
+.panel-thumbnails .thumbnail {
+    width: 60px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.panel.panel-card:hover .panel-heading {
+    height: 55px;
+
+    -webkit-transition: height 400ms ease-in-out;
+    transition: height 400ms ease-in-out;
+}
+.panel.panel-card:hover .panel-figure {
+    opacity: 0;
+
+    -webkit-transition: opacity 400ms ease-in-out;
+    transition: opacity 400ms ease-in-out;
+}
+.navbar-holder-dark{
+            padding: 20px 20px 200px 20px;
+            background: #333333;
+}     
+.fiche{
+            padding-left: 20%;
+            padding-right: 20%;
+            padding-top: 5%;
+}
+p, h2{
+    text-align: justify;
+}
+
+/* -----------------liste session film -----------------------*/
+
+#liste{
+    margin: 10%;
+}
+
+#Card1{
+  background-color: #0063DC;  
+}
+#Card2{
+  background-color: #00b488;  
+}
+#Card3{
+  background-color: #e00808;  
+}
+#body1{
+    background-color: white; 
+}
+.btn-link{
+    color :white;
+}
+.card{
+    margin-bottom: 2em;
+}
+#date{
+    float:right;
+    margin-right: 0.5em;
+    margin-top: 0.5%;
+}
+#liens{
+    margin: 1em;
+    margin-bottom: 2em;
+}
+
+

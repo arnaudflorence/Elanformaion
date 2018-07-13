@@ -1,0 +1,64 @@
+
+*{
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: "e e"
+                         "n s";
+
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    max-width :600px;
+    grid-gap: 10px 10px; 
+    line-height: 50px;
+    font-size: 4em;
+}
+.result{
+    grid-area: e;
+    border: 2px solid black;
+    text-align: right;
+    background-color: #90C1ED;
+}
+.numero{
+    grid-area: n;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat (4, 1fr);
+    border: 1px solid black;
+    text-align: center;
+    background-color: #90C1ED;
+}
+
+.symb{
+    grid-area: s;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    border: 1px solid black;
+    text-align: center;
+    background-color: #90C1ED;
+    
+}
+a{
+    text-decoration: none;
+    border: 1px solid black;
+}
+.numero a:hover{
+    background-color: #143859;
+   
+}
+.symb a:hover{
+    background-color: #143859;
+   
+}
+.calcule {
+    background-color: black;
+    max-width :600px;
+        margin : 5%;
+}
+h1 {
+    text-align: center;
+color: red;
+}

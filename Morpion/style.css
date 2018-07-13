@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+}
+#fond{
+    background-image:url(fond.jpg);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    background-size: cover;
+
+
+    /* Safari */
+    -webkit-filter: blur(5px);
+    /* Firefox */
+    -moz-filter: blur(5px);
+    /* Opera */
+    -o-filter: blur(5px);
+    /* Internet Explorer */
+    -ms-filter: blur(5px);
+    /* Filtre de floutage CSS3 standard */
+    filter: blur(5px);
+    z-index: -9999;
+
+
+}
+.unused{
+   width: 125px;
+   height: 125px;
+   font-size: 80px;
+   text-align: center;
+   padding-bottom: 25px;
+   padding-top: 0.4em;
+   margin: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+   border-style: none;
+   border-color: black;
+   border-radius: 20px;
+   border-width: 3px;
+   box-shadow: 5px 6px 25px black;
+   background-image:url(case.jpg);
+   background-size: cover;  
+   transition: opacity 1s;
+    -moz-transition: opacity 1s; /* firefox */
+    -webkit-transition: opacity 1s; /* Safari, chrome */
+   opacity: 0.6;
+}
+a:hover {
+opacity: 1;
+border-style: solid;
+box-shadow: 10px 12px 25px black;
+}
+.used{
+  width: 125px;
+   height: 125px;
+   font-size: 80px;
+   text-align: center;
+   padding-bottom: 25px;
+   padding-top: 0.4em;
+   margin: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+   border-style: none;
+   border-color: black;
+   border-radius: 20px;
+   border-width: 3px;
+   box-shadow: 5px 6px 25px black;
+   background-image:url(case.jpg);
+   background-size: cover;  
+   transition: opacity 1s;
+    -moz-transition: opacity 1s; /* firefox */
+    -webkit-transition: opacity 1s; /* Safari, chrome */
+   opacity: 1;
+}
+
+.clear {
+   width: 6em;
+   height: 1.5em;
+   font-size: 40px;
+   text-align: center ;
+   padding-top: 0.7em;
+   margin: 0.4em;
+   display: flex;
+   text-decoration: none;
+   color: black;
+   border-radius: 50px ;
+   background-image:url(sable.png);
+   background-repeat:no-repeat;
+   font-size: 40px;
+   font-family: 'Molle', cursive;
+   opacity: 1;
+   border-style: hidden;
+   
+}
+a {
+      width: 125px;
+   height: 125px;
+   font-size: 80px;
+   text-align: center;
+   padding-bottom: 25px;
+   padding-top: 0.4em;
+   margin: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+   border-style: none;
+   border-color: black;
+   border-radius: 20px;
+   border-width: 3px;
+   box-shadow: 5px 6px 25px black;
+   background-image:url(case.jpg);
+   background-size: cover;  
+   transition: opacity 1s;
+    -moz-transition: opacity 1s; /* firefox */
+    -webkit-transition: opacity 1s; /* Safari, chrome */
+   opacity: 1;
+}
+.clear:hover{
+   border-bottom-style: solid;
+   border-bottom-color:  black;
+   border-bottom-width:  3px;
+   }
+.victoire{
+       height: 1.4em;
+       text-align:  center; 
+}
+.defaite{
+       height: 1.1em;
+       text-align:  center;
+}
+.messageVictoire{
+    font-size: 33px;
+
+    color: red ;
+}
+.turn{
+    color :forestgreen;
+}
+#ligne {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Molle', cursive;
+
+    
+}
+ #menu{
+    display:flex;
+    flex-direction: row;
+    justify-content: center; 
+    margin: 1em;
+}
+#content{
+
+    max-width: 1024px;
+    margin:  auto;
+    display: block;
+    text-align: center ;
+     padding-top: 1em;
+
+}
+
+#menuTop{
+    max-width: 750px;
+    height: 400px;
+    margin:  auto;
+    display: block;
+    text-align: center ;
+    background-image:url(menu.png);
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+    padding-top: 0.5em;
+    
+}
+h1
+{
+     text-align: center;
+     margin: auto;
+     margin-top: 0.7em;
+     font-size: 60px;
+     font-family: 'Freckle Face', cursive;
+     
+}
+p
+{
+     text-align: center;
+     margin: auto;
+     font-size: 25px;
+     font-family: 'Pacifico', cursive;   
+}
+@media screen and (max-width: 750px){
+
+    #menu{
+        display : flex;
+        flex-wrap: wrap;
+    }
+    .clear{
+         margin: 0.2em;
+    }
+h1
+{
+     font-size: 50px; 
+     margin-top: 0.7em;
+}
+p
+{
+     font-size: 18px; 
+     margin-top: 0.1em;
+}
+#menuTop{
+    padding-top: 0.1em;
+    height: 290px;
+}
+.messageVictoire{
+    font-size: 23px;
+
+    color: red ;
+}
+}

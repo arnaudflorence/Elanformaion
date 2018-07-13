@@ -1,0 +1,6 @@
+*{
+    box-sizing: border-box;
+}
+#card1{
+    max-width: 50rem !important;
+}
